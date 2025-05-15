@@ -1,3 +1,4 @@
+import { PrimeReactProvider } from 'primereact/api';
 import {
     BrowserRouter,
     Route,
@@ -11,6 +12,7 @@ import Home from '../pages/Home/index.jsx';
 export function AppRoutes() {
     return (
         <>
+        <PrimeReactProvider>
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<PageLayout />}>
@@ -19,6 +21,7 @@ export function AppRoutes() {
                 </Routes>
             </BrowserRouter>
             <Footer />
+        </PrimeReactProvider>
         </>
     );
 }
