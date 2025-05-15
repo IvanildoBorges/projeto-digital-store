@@ -112,6 +112,8 @@ export const Section = styled.section`
 
     @media screen and (max-width: 769px) {
         &.banner {
+            overflow: hidden;
+            
             /* Carrosel */
             .custom-carousel {
                 padding: 4rem 1.25rem 2.5rem;
