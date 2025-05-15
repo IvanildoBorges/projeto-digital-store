@@ -74,7 +74,6 @@ export const Section = styled.section`
                                         img {
                                             width: 80%;
                                             object-fit: scale-down;
-                                            
                                         }
                                     }
                                 }
