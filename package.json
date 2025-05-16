@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "api": "json-server ./src/utils/produtos.json",
+    "api": "json-server ./src/utils/produtos.json --port 3000",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
