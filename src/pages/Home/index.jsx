@@ -1,59 +1,31 @@
 import { Carousel } from 'primereact/carousel';
 import { useEffect, useState } from "react";
+import apiDigitalStore from '../../api/apiDigitalStore';
 import ornamento from "../../assets/Ornament.svg";
 import { Section } from "./style";
-import destaqueIMG from "/White-Sneakers.png";
 
 const Home = () => {
-    const [banners, setBanners] = useState([]);
-    const api = {
-        getBanners: async () => {
-            return [
-                {
-                    impacto: "Melhores ofertas personalizadas",
-                    titulo: "Queima de stoque Nike 🔥",
-                    subtitulo: "Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.",
-                    imagem: destaqueIMG
-                },
-                {
-                    impacto: "Melhores ofertas personalizadas",
-                    titulo: "Queima de stoque Nike 🔥",
-                    subtitulo: "Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.",
-                    imagem: destaqueIMG
-                },
-                {
-                    impacto: "Melhores ofertas personalizadas",
-                    titulo: "Queima de stoque Nike 🔥",
-                    subtitulo: "Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.",
-                    imagem: destaqueIMG
-                },
-                {
-                    impacto: "Melhores ofertas personalizadas",
-                    titulo: "Queima de stoque Nike 🔥",
-                    subtitulo: "Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.",
-                    imagem: destaqueIMG,
-                    textoAlternativo: "Produto destaque"
-                }
-            ]
-        },
-    };
+    const [banners, setBanners] = useState(undefined);
 
     useEffect(() => {
-        api.getBanners().then((data) => setBanners(data));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        apiDigitalStore.getBanners().then((data) => setBanners(data));
+        apiDigitalStore.getProdutos(8).then((data) => {
+            console.log(data);
+        });
+     
     }, []);
 
     const bannerTemplate = (banner) => {
         return (
             <div className="banner__container">
                 <div className="left__content">
-                    <p className="impact__text">{banner.impacto}</p>
-                    <h1>{banner.titulo}</h1>
-                    <p className="subtitle">{banner.subtitulo}</p>
+                    <p className="impact__text">{banner.impact}</p>
+                    <h1>{banner.title}</h1>
+                    <p className="subtitle">{banner.subtitle}</p>
                     <button className="primary-button">Ver Ofertas</button>
                 </div>
                 <div className="right__content">
-                    <img src={banner.imagem} alt={banner.textoAlternativo} />
+                    <img src={banner.image} alt={banner.alt} />
                 </div>
             </div>
         );
@@ -72,7 +44,7 @@ const Home = () => {
                     itemTemplate={bannerTemplate} 
                 />
                 <img className="img-absolute" src={ornamento} alt="Ornamento" />
-            </Section>
+            </Section>  
         </>
      );
 }
