@@ -36,22 +36,9 @@ const Global = globalStyle`
         border: none;
     }
 
-    .primary-button {
-        font-size: 1rem;
-        font-weight: 700;
-        line-height: 24px;
-        letter-spacing: .75px;
-        font-family: ${tipography.familia};
-        background-color: ${actionsColors.primary};
-        color: ${grayScaleColors.lightGray3};
-        padding: .75rem 1rem;
-        border-radius: .5rem;
-        cursor: pointer;
-        transition: all .3s ease-in;
-    }
-
-    .primary-button:hover {
-        background-color: ${actionsColors.tertiary};
+    /* Afastamento padrão das seções */
+    section {
+        padding: 0 6.25rem;
     }
 `;
 
