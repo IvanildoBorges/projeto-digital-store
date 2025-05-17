@@ -2,7 +2,8 @@ import { Carousel } from 'primereact/carousel';
 import { useEffect, useState } from "react";
 import apiDigitalStore from '../../api/apiDigitalStore';
 import ornamento from "../../assets/Ornament.svg";
-import { Section } from "./style";
+import Banner from '../../components/Banner';
+import { SectionBanner } from "./style";
 
 const Home = () => {
     const [banners, setBanners] = useState(undefined);
@@ -15,25 +16,15 @@ const Home = () => {
      
     }, []);
 
-    const bannerTemplate = (banner) => {
+    const bannerTemplate = (banner) =>  {
         return (
-            <div className="banner__container">
-                <div className="left__content">
-                    <p className="impact__text">{banner.impact}</p>
-                    <h1>{banner.title}</h1>
-                    <p className="subtitle">{banner.subtitle}</p>
-                    <button className="primary-button">Ver Ofertas</button>
-                </div>
-                <div className="right__content">
-                    <img src={banner.image} alt={banner.alt} />
-                </div>
-            </div>
+            <Banner banner={banner} />
         );
     };
     
     return ( 
         <>
-            <Section className="banner">
+            <SectionBanner className="banner">
                 <Carousel 
                     value={banners} 
                     numVisible={1} 
@@ -44,7 +35,7 @@ const Home = () => {
                     itemTemplate={bannerTemplate} 
                 />
                 <img className="img-absolute" src={ornamento} alt="Ornamento" />
-            </Section>  
+            </SectionBanner>  
         </>
      );
 }
