@@ -282,25 +282,469 @@
         },
         {
             "id": "8831001",
-            "title": "",
+            "title": "Headphone Wireless Bluetooth 5.1 microsd",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-            "brand": "",
-            "type": "",
+            "brand": "Genérico",
+            "type": "Headphone",
             "category": "Utilitário",
-            "gender": "",
+            "gender": "Unisex",
             "state": "new",
-            "price": 0.0,
+            "price": 70.0,
             "discount": 0,
-            "sizes": [0, 0, 0],
+            "sizes": [36],
             "colors": [
                 {
-                    "name": "",
-                    "code": "#"
+                    "name": "Azul / Branco",
+                    "code": "#6dc6f4"
                 }
             ],
-            "rating": 0.0,
-            "reviews": 0,
-            "image": ""
+            "rating": 3.7,
+            "reviews": 5,
+            "image": "https://www.pngitem.com/pimgs/m/8-81226_headphones-png-download-headphones-transparent-png.png"
+        },
+        {
+            "id": "8831002",
+            "title": "Headset Gamer Redragon Zeus H510",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "Redragon",
+            "type": "Headset",
+            "category": "Utilitário",
+            "gender": "Unisex",
+            "state": "new",
+            "price": 300.0,
+            "discount": 30,
+            "sizes": [37, 42],
+            "colors": [
+                {
+                    "name": "Vermelho / Preto",
+                    "code": "#D2070A"
+                }
+            ],
+            "rating": 4.9,
+            "reviews": 5000,
+            "image": "https://www.pngitem.com/pimgs/m/178-1788543_redragon-h510-headphone-headset-gamer-redragon-zeus-hd.png"
+        },
+        {
+            "id": "8831003",
+            "title": "Headset Asus Rog Strix Wireless Gaming",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "Asus",
+            "type": "Headset",
+            "category": "Utilitário",
+            "gender": "Unisex",
+            "state": "new",
+            "price": 450.0,
+            "discount": 20,
+            "sizes": [36, 42],
+            "colors": [
+                {
+                    "name": "Laranja / Preto",
+                    "code": "#FF7425"
+                }
+            ],
+            "rating": 4.9,
+            "reviews": 7500,
+            "image": "https://www.pngitem.com/pimgs/m/178-1788723_asus-rog-strix-wireless-gaming-headset-hd-png.png"
+        },
+        {
+            "id": "8831004",
+            "title": "Headset Sony Joway wireless sport",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "Sony",
+            "type": "Headset",
+            "category": "Utilitário",
+            "gender": "Unisex",
+            "state": "new",
+            "price": 150.0,
+            "discount": 0,
+            "sizes": [36, 42],
+            "colors": [
+                {
+                    "name": "Branco",
+                    "code": "#FFFFFF"
+                },
+                {
+                    "name": "Preto",
+                    "code": "#333333"
+                }
+            ],
+            "rating": 4.6,
+            "reviews": 3000,
+            "image": "https://e7.pngegg.com/pngimages/183/693/png-clipart-headphones-headset-bluetooth-handsfree-ecouteur-sony-wireless-headset-sport-bluetooth-mobile-phones.png"
+        },
+        {
+            "id": "8831005",
+            "title": "Headphone Wireless Bluetooth 5.1 microsd",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "Genérico",
+            "type": "Headphone",
+            "category": "Utilitário",
+            "gender": "Unisex",
+            "state": "new",
+            "price": 75.0,
+            "discount": 0,
+            "sizes": [36],
+            "colors": [
+                {
+                    "name": "Vermelho / Preto",
+                    "code": "#FF4521"
+                }
+            ],
+            "rating": 3.8,
+            "reviews": 17,
+            "image": "https://e7.pngegg.com/pngimages/68/524/png-clipart-headphones-headset-wireless-bluetooth-red-wireless-headphones-electronics-computer.png"
+        },
+        {
+            "id": "8831006",
+            "title": "Headset Ideus Handsfree Ear",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "Ideus",
+            "type": "Headphone",
+            "category": "Utilitário",
+            "gender": "Unisex",
+            "state": "new",
+            "price": 45.0,
+            "discount": 0,
+            "sizes": [100, 120],
+            "colors": [
+                {
+                    "name": "Amarelo / Preto",
+                    "code": "#FCE840"
+                }
+            ],
+            "rating": 4.0,
+            "reviews": 2987,
+            "image": "https://e7.pngegg.com/pngimages/226/171/png-clipart-headphones-headset-handsfree-ear-headphones-blue-electronics.png"
+        },
+        {
+            "id": "8831007",
+            "title": "HTC Vive Oculus VR Headset com controles",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "HTC",
+            "type": "Oculos VR",
+            "category": "Utilitário",
+            "gender": "Unisex",
+            "state": "new",
+            "price": 5500.0,
+            "discount": 15,
+            "sizes": [36, 42],
+            "colors": [
+                {
+                    "name": "Preto",
+                    "code": "#333333"
+                }
+            ],
+            "rating": 4.9,
+            "reviews": 9800,
+            "image": "https://e7.pngegg.com/pngimages/257/273/png-clipart-black-vr-headset-with-controllers-y-oculus-rift-virtual-reality-headset-htc-vive-oculus-vr-vr-headset-electronics-microsoft-store.png"
+        },
+        {
+            "id": "8831008",
+            "title": "Samsung Gear VR Headset",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "Samsung",
+            "type": "Oculos VR",
+            "category": "Utilitário",
+            "gender": "Unisex",
+            "state": "new",
+            "price": 4500.0,
+            "discount": 10,
+            "sizes": [36, 42],
+            "colors": [
+                {
+                    "name": "Preto",
+                    "code": "#333333"
+                }
+            ],
+            "rating": 4.9,
+            "reviews": 9800,
+            "image": "https://e7.pngegg.com/pngimages/480/558/png-clipart-iphone-7-rocket-vr-virtual-reality-headset-samsung-gear-vr-vr-headset-glasses-mobile-phones.png"
+        },
+        {
+            "id": "8831009",
+            "title": "Rift VR Headset com controle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "Rift",
+            "type": "Oculos VR",
+            "category": "Utilitário",
+            "gender": "Unisex",
+            "state": "new",
+            "price": 3800.0,
+            "discount": 10,
+            "sizes": [36, 42],
+            "colors": [
+                {
+                    "name": "Branco",
+                    "code": "#FFFFFF"
+                }
+            ],
+            "rating": 4.7,
+            "reviews": 6500,
+            "image": "https://e7.pngegg.com/pngimages/162/294/png-clipart-oculus-rift-virtual-reality-headset-oculus-vr-oculus-virtual-reality-headset-electronics-mobile-phones.png"
+        },
+        {
+            "id": "9048001",
+            "title": "Short Bud Pink",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "Bud",
+            "type": "Short",
+            "category": "Vestuário",
+            "gender": "Feminino",
+            "state": "new",
+            "price": 39.9,
+            "discount": 5,
+            "sizes": [37, 38, 39, 40],
+            "colors": [
+                {
+                    "name": "Rosa nudge",
+                    "code": "#C16763"
+                }
+            ],
+            "rating": 4.1,
+            "reviews": 2500,
+            "image": "https://www.pngitem.com/pimgs/m/578-5788049_bud-pink-shorts-pink-shorts-png-transparent-png.png"
+        },
+        {
+            "id": "9048002",
+            "title": "Short Sweat Women Green",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "Sweat Women",
+            "type": "Short",
+            "category": "Vestuário",
+            "gender": "Feminino",
+            "state": "new",
+            "price": 38.0,
+            "discount": 4,
+            "sizes": [37, 38, 39, 40],
+            "colors": [
+                {
+                    "name": "Verde",
+                    "code": "#00A78D"
+                }
+            ],
+            "rating": 4.2,
+            "reviews": 2600,
+            "image": "https://www.pngitem.com/pimgs/m/283-2836786_green-sweat-shorts-women-hd-png-download.png"
+        },
+        {
+            "id": "9048003",
+            "title": "Short Nvizin Board",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "Nvizin",
+            "type": "Short",
+            "category": "Vestuário",
+            "gender": "Masculino",
+            "state": "new",
+            "price": 44.5,
+            "discount": 8,
+            "sizes": [38, 39, 40, 41, 42],
+            "colors": [
+                {
+                    "name": "Vermelho / Branco",
+                    "code": "#DA4340"
+                }
+            ],
+            "rating": 4.1,
+            "reviews": 2200,
+            "image": "https://www.pngitem.com/pimgs/m/283-2836652_board-short-hd-png-download.png"
+        },
+        {
+            "id": "9048004",
+            "title": "Short Hibou Black",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "Hibou",
+            "type": "Short",
+            "category": "Vestuário",
+            "gender": "Unisex",
+            "state": "new",
+            "price": 75.0,
+            "discount": 5,
+            "sizes": [37, 38, 39, 40],
+            "colors": [
+                {
+                    "name": "Preto",
+                    "code": "#333333"
+                }
+            ],
+            "rating": 4.6,
+            "reviews": 3100,
+            "image": "https://www.pngitem.com/pimgs/m/456-4567450_black-shorts-png-transparent-transparent-background-shorts-outline.png"
+        },
+        {
+            "id": "9048005",
+            "title": "Blusa Clothing Sleeve Musgle",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "Clothing",
+            "type": "Camiseta",
+            "category": "Vestuário",
+            "gender": "Feminino",
+            "state": "new",
+            "price": 105.0,
+            "discount": 0,
+            "sizes": [37, 38, 39, 40],
+            "colors": [
+                {
+                    "name": "Verde Musgo",
+                    "code": "#4D4B38"
+                }
+            ],
+            "rating": 4.3,
+            "reviews": 2250,
+            "image": "https://e7.pngegg.com/pngimages/791/462/png-clipart-blouse-t-shirt-clothing-sleeve-t-shirt-fashion-woman.png"
+        },
+        {
+            "id": "9048006",
+            "title": "Blusa Clothing Sleeve Outerwear",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "Clothing",
+            "type": "Camiseta",
+            "category": "Vestuário",
+            "gender": "Feminino",
+            "state": "new",
+            "price": 147.5,
+            "discount": 0,
+            "sizes": [37, 38, 39, 40],
+            "colors": [
+                {
+                    "name": "Marinho / Vermelho",
+                    "code": "#313654"
+                }
+            ],
+            "rating": 4.6,
+            "reviews": 2750,
+            "image": "https://e7.pngegg.com/pngimages/682/42/png-clipart-shirt-clothing-sleeve-outerwear-blouse-stripes-photography-fashion.png"
+        },
+        {
+            "id": "9048007",
+            "title": "Blusa Ruffle Neckline Sleeve Red",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "Ruffle Neckline",
+            "type": "Camiseta",
+            "category": "Vestuário",
+            "gender": "Feminino",
+            "state": "new",
+            "price": 170.9,
+            "discount": 0,
+            "sizes": [37, 38, 39, 40],
+            "colors": [
+                {
+                    "name": "Vermelho",
+                    "code": "#C81015"
+                }
+            ],
+            "rating": 4.6,
+            "reviews": 2750,
+            "image": "https://e7.pngegg.com/pngimages/729/212/png-clipart-sleeve-blouse-ruffle-neckline-shirt-shirt-fashion-woman.png"
+        },
+        {
+            "id": "9048008",
+            "title": "Camiseta Crew-Neck White",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "Clothing",
+            "type": "Camiseta",
+            "category": "Vestuário",
+            "gender": "Masculino",
+            "state": "new",
+            "price": 35.9,
+            "discount": 0,
+            "sizes": [38, 39, 40, 41],
+            "colors": [
+                {
+                    "name": "branco",
+                    "code": "#FFFFFF"
+                }
+            ],
+            "rating": 4.4,
+            "reviews": 2540,
+            "image": "https://e7.pngegg.com/pngimages/29/367/png-clipart-white-crew-neck-t-shirt-t-shirt-leia-organa-hoodie-clothing-t-shirts-tshirt-white.png"
+        },
+        {
+            "id": "9048009",
+            "title": "Camiseta Clothing Sleeve Black",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "Clothing",
+            "type": "Camiseta",
+            "category": "Vestuário",
+            "gender": "Masculino",
+            "state": "new",
+            "price": 37.9,
+            "discount": 0,
+            "sizes": [38, 39, 40, 41],
+            "colors": [
+                {
+                    "name": "Preto",
+                    "code": "#333333"
+                }
+            ],
+            "rating": 4.6,
+            "reviews": 2650,
+            "image": "https://e7.pngegg.com/pngimages/826/253/png-clipart-t-shirt-polo-shirt-clothing-sleeve-black-t-shirt-black-crew-neck-t-shirt-tshirt-fashion.png"
+        },
+        {
+            "id": "9048010",
+            "title": "Camiseta Gildan Activewear Navy",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "Gildan",
+            "type": "Camiseta",
+            "category": "Vestuário",
+            "gender": "Masculino",
+            "state": "new",
+            "price": 34.5,
+            "discount": 0,
+            "sizes": [38, 39, 40, 41],
+            "colors": [
+                {
+                    "name": "Azul",
+                    "code": "#23589C"
+                }
+            ],
+            "rating": 4.4,
+            "reviews": 2572,
+            "image": "https://e7.pngegg.com/pngimages/795/603/png-clipart-t-shirt-gildan-activewear-navy-blue-t-shirt-tshirt-blue.png"
+        },
+        {
+            "id": "9048011",
+            "title": "Blusão Moletom American Strong Red",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "American Strong",
+            "type": "Camiseta",
+            "category": "Vestuário",
+            "gender": "Unisex",
+            "state": "new",
+            "price": 275.0,
+            "discount": 10,
+            "sizes": [37, 38, 39, 40, 41],
+            "colors": [
+                {
+                    "name": "Vermelho",
+                    "code": "#CD2529"
+                }
+            ],
+            "rating": 4.6,
+            "reviews": 2985,
+            "image": "https://e7.pngegg.com/pngimages/362/840/png-clipart-hoodie-t-shirt-red-bluza-t-shirt-tshirt-color.png"
+        },
+        {
+            "id": "9048012",
+            "title": "Blusão Moletom Tracksuit Grey",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+            "brand": "Tracksuit",
+            "type": "Camiseta",
+            "category": "Vestuário",
+            "gender": "Unisex",
+            "state": "new",
+            "price": 295.6,
+            "discount": 15,
+            "sizes": [37, 38, 39, 40, 41],
+            "colors": [
+                {
+                    "name": "Cinza",
+                    "code": "#979797"
+                }
+            ],
+            "rating": 4.7,
+            "reviews": 2999,
+            "image": "https://e7.pngegg.com/pngimages/500/525/png-clipart-hoodie-t-shirt-tracksuit-bluza-t-shirt-zipper-grey.png"
         }
     ],
     "categories": [
@@ -319,10 +763,117 @@
         {
             "id": 4,
             "category": "Corrida"
-        } 
+        },
+        {
+            "id": 4,
+            "category": "Vestuário"
+        }
     ],
     "brands": [
-        {}
+        {
+            "id": "2025001",
+            "brand": "Adidas"
+        },
+        {
+            "id": "2025002",
+            "brand": "American Strong"
+        },
+        {
+            "id": "2025003",
+            "brand": "Asus"
+        },
+        {
+            "id": "2025004",
+            "brand": "Bud"
+        },
+        {
+            "id": "2025005",
+            "brand": "Chuck Taylor"
+        },
+        {
+            "id": "2025006",
+            "brand": "Clothing"
+        },
+        {
+            "id": "2025007",
+            "brand": "Con Walking"
+        },
+        {
+            "id": "2025008",
+            "brand": "DC"
+        },
+        {
+            "id": "2025009",
+            "brand": "Genérico"
+        },
+        {
+            "id": "2025010",
+            "brand": "Gildan"
+        },
+        {
+            "id": "2025011",
+            "brand": "Hibou"
+        },
+        {
+            "id": "2025012",
+            "brand": "HTC"
+        },
+        {
+            "id": "2025013",
+            "brand": "Ideus"
+        },
+        {
+            "id": "2025014",
+            "brand": "K-Swiss"
+        },
+        {
+            "id": "2025015",
+            "brand": "Lace Up"
+        },
+        {
+            "id": "2025016",
+            "brand": "Nike"
+        },
+        {
+            "id": "2025017",
+            "brand": "Nvizin"
+        },
+        {
+            "id": "2025018",
+            "brand": "Puma"
+        },
+        {
+            "id": "2025019",
+            "brand": "Redragon"
+        },
+        {
+            "id": "2025020",
+            "brand": "Rift"
+        },
+        {
+            "id": "2025021",
+            "brand": "Ruffle Neckline"
+        },
+        {
+            "id": "2025022",
+            "brand": "Samsung"
+        },
+        {
+            "id": "2025023",
+            "brand": "Sony"
+        },
+        {
+            "id": "2025024",
+            "brand": "Sportswear"
+        },
+        {
+            "id": "2025025",
+            "brand": "Sweat Women"
+        },
+        {
+            "id": "2025026",
+            "brand": "Tracksuit"
+        }
     ],
     "promotions": [
         {
