@@ -35,11 +35,6 @@ const Global = globalStyle`
     button, input {
         border: none;
     }
-
-    /* Afastamento padrão das seções */
-    section {
-        padding: 0 6.25rem;
-    }
 `;
 
 export default Global;
