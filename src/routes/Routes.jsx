@@ -4,7 +4,6 @@ import {
     Route,
     Routes
 } from 'react-router-dom';
-import Footer from '../components/layout/Footer.jsx';
 import PageLayout from '../components/layout/PageLayout.jsx';
 import Home from '../pages/Home/index.jsx';
 
@@ -20,7 +19,6 @@ export function AppRoutes() {
                     </Route>
                 </Routes>
             </BrowserRouter>
-            <Footer />
         </PrimeReactProvider>
         </>
     );

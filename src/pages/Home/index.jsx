@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import apiDigitalStore from '../../api/apiDigitalStore';
 import ornamento from "../../assets/Ornament.svg";
 import Banner from '../../components/Banner';
+import Section from '../../components/layout/Section';
 import { SectionBanner } from "./style";
 
 const Home = () => {
@@ -24,7 +25,7 @@ const Home = () => {
     
     return ( 
         <>
-            <SectionBanner className="banner">
+            <SectionBanner>
                 <Carousel 
                     value={banners} 
                     numVisible={1} 
@@ -36,6 +37,13 @@ const Home = () => {
                 />
                 <img className="img-absolute" src={ornamento} alt="Ornamento" />
             </SectionBanner>  
+            <Section 
+                activeTitle
+                activeLink
+                title="Isso é um título?"
+                // titleAlign="center"
+                link={ { text: "Próxima tela", href: "#" } }
+            ></Section>
         </>
      );
 }
