@@ -169,7 +169,7 @@ export const SectionHighlights = styled(Section)`
             }
         }
 
-        .box-title {
+        &.center-highlight.box-title {
             padding: 0 1.25rem 0;
             .title__section.center {
                 text-align: left;
