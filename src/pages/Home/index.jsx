@@ -1,4 +1,4 @@
-import { Carousel } from 'primereact/carousel';
+import { Carousel as Gallery } from 'primereact/carousel';
 import { useEffect, useState } from "react";
 import apiDigitalStore from '../../api/apiDigitalStore';
 import ornamento from "../../assets/Ornament.svg";
@@ -26,7 +26,7 @@ const Home = () => {
     return ( 
         <>
             <SectionBanner>
-                <Carousel 
+                <Gallery 
                     value={banners} 
                     numVisible={1} 
                     numScroll={1} 
@@ -39,10 +39,8 @@ const Home = () => {
             </SectionBanner>  
             <Section 
                 activeTitle
-                activeLink
-                title="Isso é um título?"
-                // titleAlign="center"
-                link={ { text: "Próxima tela", href: "#" } }
+                title="Coleções em destaque"
+                titleAlign="center"
             ></Section>
         </>
      );
