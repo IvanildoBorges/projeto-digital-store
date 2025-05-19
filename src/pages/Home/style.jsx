@@ -86,3 +86,123 @@ export const SectionBanner = styled(Section)`
         }
     }
 `;
+
+export const SectionHighlights = styled(Section)`
+    &.center-highlight {
+        margin-top: 1.25rem;
+        margin-bottom: 2.688rem;
+    }
+
+    .highlights {
+        display: flex;
+        gap: .75rem;
+
+        .highlight__item {
+            flex: 1;
+            overflow: hidden; /* ESSENCIAL para o zoom ficar interno */
+            
+            a {
+                display: block; /* garante que a <a> envolva corretamente */
+                user-select: none;
+
+                img {
+                    border-radius: .25rem;
+                    width: 100%;
+                    transition: transform 0.3s ease;
+                    object-fit: cover; /* mantém proporção preenchendo o espaço */
+                    transition: transform 0.3s ease;
+                    display: block; /* remove espaço extra abaixo da imagem */
+                }
+                img:hover {
+                    transform: scale(1.1); /* zoom interno */
+                }
+            }
+        }
+    }
+
+    .center {
+        justify-content: center;
+        gap: 3rem;
+
+        .highlight__item {
+            flex: none;
+            text-align: center;
+            
+            a {
+                background-color: ${grayScaleColors.white};
+                padding: 1.25rem;
+                border-radius: 100%;
+                margin-bottom: 0.75rem;
+            }
+
+            .name__item {
+                font-size: 0.875rem;
+                font-weight: 700;
+                line-height: 1.375rem;
+                letter-spacing: .75px;
+                color: ${grayScaleColors.darkGray2};
+            }
+        }
+    }
+
+    @media screen and (max-width: 769px) {
+        &.center-highlight {
+            padding: 0;
+            overflow: hidden;
+            margin-top: 3.125rem;
+            margin-bottom: 2.625rem;
+        }
+
+        .highlights {
+            flex-direction: column;
+            gap: 0.625rem;
+
+            .highlight__item {
+                a {
+                    img {
+                        border-radius: .5rem;
+                    }
+                    img:hover {
+                        transform: none;
+                    }
+                }
+            }
+        }
+
+        .box-title {
+            padding: 0 1.25rem 0;
+            .title__section.center {
+                text-align: left;
+            }
+        }
+
+        .highlights.center {
+            justify-content: flex-start;
+            flex-direction: row;
+            gap: 1.188rem;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+            padding: 0 1.25rem .5rem;
+
+            .highlight__item {
+                flex: none;
+                text-align: center;
+                
+                a {
+                    padding: 1.106rem;
+                    margin-bottom: 0.625rem;
+
+                    .icone {
+                        height: 3.5rem;
+                        width: 3.5rem;
+                    }
+                }
+
+                .name__item {
+                    font-size: 0.75rem;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+`;
