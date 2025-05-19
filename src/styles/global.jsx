@@ -7,6 +7,7 @@ const Global = globalStyle`
         margin: 0;
         padding: 0;
         border-box: box-sizing;
+        list-style: none;
     }
 
     html {
@@ -34,6 +35,23 @@ const Global = globalStyle`
 
     button, input {
         border: none;
+    }
+
+    .icone {
+        path {
+            fill: ${grayScaleColors.lightGray};
+            transition: all 0.3s ease;
+        }
+    }
+    .icone:hover {
+        path {
+            fill: ${actionsColors.primary};
+        }
+    }
+    .icone.active {
+        path {
+            fill: ${actionsColors.primary};
+        }
     }
 `;
 
