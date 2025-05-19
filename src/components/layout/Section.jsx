@@ -48,7 +48,13 @@ const Section = ({
                             {title}
                         </h2>
                         {activeLink 
-                            ? <a className="link__section" href={link.href}>{link.text}</a>
+                            ? <a 
+                                className="link__section" 
+                                href={link.href} 
+                                referrerPolicy="no-referrer"
+                              >
+                                {link.text}
+                              </a>
                             : <></>
                         }
                     </div>)
