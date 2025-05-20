@@ -108,7 +108,6 @@ export const SectionHighlights = styled(Section)`
                 img {
                     border-radius: .25rem;
                     width: 100%;
-                    transition: transform 0.3s ease;
                     object-fit: cover; /* mantém proporção preenchendo o espaço */
                     transition: transform 0.3s ease;
                     display: block; /* remove espaço extra abaixo da imagem */
@@ -203,6 +202,26 @@ export const SectionHighlights = styled(Section)`
                     letter-spacing: 1px;
                 }
             }
+        }
+    }
+`;
+
+export const SectionTrending = styled(Section)`
+    padding-bottom: 7.5rem;
+
+    .grid__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 1.5rem;
+        row-gap: 2.5rem;
+    }
+
+    @media screen and (max-width: 769px) {
+        padding-bottom: 2.5rem;
+
+        .grid__list {
+            grid-template-columns: 1fr 1fr;
+            column-gap: 0.563rem;
         }
     }
 `;

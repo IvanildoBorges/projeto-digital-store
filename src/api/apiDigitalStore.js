@@ -1,4 +1,5 @@
 import BannerModel from "../models/banner";
+import ProductModel from "../models/product";
 
 const url = "http://localhost:3000";
 
@@ -6,7 +7,7 @@ const apiDigitalStore = {
     getProdutos: async (limit) => {
         return await fetch(`${url}/products?_limit=${limit}`)
             .then(resposta => resposta.json())
-            .then(produtos => produtos)
+            .then(produtos => produtos.map(product => new ProductModel(product)))
             .catch(error => {
                 console.error("Erro ao buscar produtos: ", error);
                 return [];

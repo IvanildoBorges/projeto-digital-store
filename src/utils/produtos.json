@@ -2,7 +2,7 @@
     "products": [
         {
             "id": "38416711",
-            "title": "Tênis Nike revolution 6 next nature",
+            "title": "Nike revolution 6 next nature",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
             "brand": "Nike",
             "type": "Tênis",
@@ -36,7 +36,7 @@
         },
         {
             "id": "38479628",
-            "title": "Tênis K-Swiss V8",
+            "title": "K-Swiss V8",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
             "brand": "K-Swiss",
             "type": "Tênis",
@@ -62,7 +62,7 @@
         },
         {
             "id": "25479628",
-            "title": "Tênis Adidas Originals ASICS",
+            "title": "Adidas Originals ASICS",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
             "brand": "Adidas",
             "type": "Tênis",
@@ -84,7 +84,7 @@
         },
         {
             "id": "25473315",
-            "title": "Tênis Adidas Hiking boot",
+            "title": "Adidas Hiking boot",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
             "brand": "Adidas",
             "type": "Tênis",
@@ -106,7 +106,7 @@
         },
         {
             "id": "38416821",
-            "title": "Tênis Nike Air Max",
+            "title": "Nike Air Max",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
             "brand": "Nike",
             "type": "Tênis",
@@ -128,7 +128,7 @@
         },
         {
             "id": "3841532",
-            "title": "Tênis Nike Air Jordan",
+            "title": "Nike Air Jordan",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
             "brand": "Nike",
             "type": "Tênis",
@@ -149,16 +149,16 @@
             "image": "https://e7.pngegg.com/pngimages/32/780/png-clipart-sneakers-air-jordan-shoe-nike-air-max-nike-white-orange.png"
         },
         {
-            "id": "4441001",
-            "title": "Tênis DC Vans Slip-on",
+            "id": "3841041",
+            "title": "Nike Off White",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-            "brand": "DC",
+            "brand": "Nike",
             "type": "Tênis",
             "category": "Casual",
             "gender": "Unisex",
             "state": "new",
-            "price": 40.0,
-            "discount": 10,
+            "price": 400.0,
+            "discount": 25,
             "sizes": [35, 36, 38, 40, 41],
             "colors": [
                 {
@@ -166,13 +166,13 @@
                     "code": "#FFFFFF"
                 }
             ],
-            "rating": 3.9,
-            "reviews": 55,
+            "rating": 4.9,
+            "reviews": 5500,
             "image": "https://www.pngitem.com/pimgs/m/369-3694401_tenis-nike-off-white-hd-png-download.png"
         },
         {
             "id": "3398001",
-            "title": "Tênis Chuck Taylor All-Stars Converse",
+            "title": "Chuck Taylor All-Stars Converse",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
             "brand": "Chuck Taylor",
             "type": "Tênis",
@@ -194,7 +194,7 @@
         },
         {
             "id": "2282001",
-            "title": "Tênis Sportswear Skate",
+            "title": "Sportswear Skate",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
             "brand": "Sportswear",
             "type": "Tênis",
@@ -216,7 +216,7 @@
         },
         {
             "id": "1177001",
-            "title": "Tênis Lace Up Lightweight",
+            "title": "Lace Up Lightweight",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
             "brand": "Lace Up",
             "type": "Tênis",
@@ -238,7 +238,7 @@
         },
         {
             "id": "1177001",
-            "title": "Tênis Con Walking 224",
+            "title": "Con Walking 224",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
             "brand": "Con Walking",
             "type": "Tênis",
@@ -260,7 +260,7 @@
         },
         {
             "id": "7777001",
-            "title": "Tênis Puma Rs X Reinvention Whisper",
+            "title": "Puma Rs X Reinvention Whisper",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
             "brand": "Puma",
             "type": "Tênis",
@@ -797,10 +797,6 @@
         {
             "id": "2025007",
             "brand": "Con Walking"
-        },
-        {
-            "id": "2025008",
-            "brand": "DC"
         },
         {
             "id": "2025009",

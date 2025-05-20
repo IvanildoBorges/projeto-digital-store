@@ -7,20 +7,20 @@ import HeadsetSVG from '../../assets/HeadsetSVG';
 import ornamento from "../../assets/Ornament.svg";
 import TenisSVG from '../../assets/TenisSVG';
 import Banner from '../../components/Banner';
+import CardProduct from '../../components/CardProduct';
 import {
     SectionBanner,
-    SectionHighlights
+    SectionHighlights,
+    SectionTrending
 } from "./style";
 
 const Home = () => {
     const [banners, setBanners] = useState([]);
+    const [produtos, setProdutos] = useState([]);
 
     useEffect(() => {
         apiDigitalStore.getBanners().then((data) => setBanners(data));
-        apiDigitalStore.getProdutos(8).then((data) => {
-            console.log(data);
-        });
-     
+        apiDigitalStore.getProdutos(8).then((data) => setProdutos(data));
     }, []);
 
     const bannerTemplate = (banner) =>  {
@@ -28,6 +28,12 @@ const Home = () => {
             <Banner banner={banner} />
         );
     };
+
+    const listagemDeCardsDeProdutos = () => {
+        return (
+            produtos.map(produto => <CardProduct key={produto.id} produto={produto} />)
+        );
+    }
     
     return ( 
         <>
@@ -96,6 +102,11 @@ const Home = () => {
                     </li>
                 </ul>
             </SectionHighlights>
+            <SectionTrending title="Produtos em alta" activeLink link={{ text: "Ver todos", href: "/products" }}>
+                <div className="grid__list">
+                    {listagemDeCardsDeProdutos()}
+                </div>
+            </SectionTrending>
         </>
      );
 }
