@@ -107,6 +107,26 @@ const Home = () => {
                     {listagemDeCardsDeProdutos()}
                 </div>
             </SectionTrending>
+            <SectionBanner activeTitle={false}>
+                <div className="gradient__box"></div>
+                <Gallery 
+                    value={[
+                        {
+                            "id": "20240001",
+                            "impact": "Oferta especial",
+                            "title": "Air Jordan edição de colecionador",
+                            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+                            "image": "/home-slide-4.png",
+                            "alt": "Oferta especial",
+                            "textBtn": "Ver Oferta"
+                        }
+                    ]}  
+                    className="custom-carousel toggle-direction-carousel" 
+                    itemTemplate={bannerTemplate} 
+                    showIndicators={false}
+                />
+                
+            </SectionBanner>
         </>
      );
 }

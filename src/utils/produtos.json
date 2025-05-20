@@ -878,7 +878,8 @@
             "title": "Queima de stoque Nike 🔥",
             "subtitle": "Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.",
             "image": "/White-Sneakers.png",
-            "alt": "Produto destaque"
+            "alt": "Produto destaque",
+            "textBtn": "Ver Ofertas"
         },
         {
             "id": "20250002",
@@ -886,7 +887,8 @@
             "title": "K-Swiss no precinho 🫶",
             "subtitle": "Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.",
             "image": "/K-Swiss-V8.png",
-            "alt": "Produto destaque"
+            "alt": "Produto destaque",
+            "textBtn": "Ver Ofertas"
         },
         {
             "id": "20250003",
@@ -894,7 +896,8 @@
             "title": "Queima de stoque Nike 🔥",
             "subtitle": "Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.",
             "image": "/White-Sneakers.png",
-            "alt": "Produto destaque"
+            "alt": "Produto destaque",
+            "textBtn": "Ver Ofertas"
         },
         {
             "id": "20250004",
@@ -902,7 +905,8 @@
             "title": "K-Swiss no precinho 🫶",
             "subtitle": "Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.",
             "image": "/K-Swiss-V8.png",
-            "alt": "Produto destaque"
+            "alt": "Produto destaque",
+            "textBtn": "Ver Ofertas"
         },
         {
             "id": "20250005",
@@ -910,7 +914,8 @@
             "title": "Queima de stoque Nike 🔥",
             "subtitle": "Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.",
             "image": "/White-Sneakers.png",
-            "alt": "Produto destaque"
+            "alt": "Produto destaque",
+            "textBtn": "Ver Ofertas"
         },
         {
             "id": "20250006",
@@ -918,7 +923,8 @@
             "title": "K-Swiss no precinho 🫶",
             "subtitle": "Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.",
             "image": "/K-Swiss-V8.png",
-            "alt": "Produto destaque"
+            "alt": "Produto destaque",
+            "textBtn": "Ver Ofertas"
         }
     ]
 }
