@@ -42,6 +42,7 @@ export const SectionBanner = styled(Section)`
         }
     }
 
+    /* Imagem flutuante a direita */
     .img-absolute {
         position: absolute;
         top: 4.875rem;
@@ -49,10 +50,65 @@ export const SectionBanner = styled(Section)`
         width: 9%;
     }
 
+    /* Banner Oferta especial */
+    .toggle-direction-carousel {
+        background-color: ${grayScaleColors.white};
+
+        .banner__container {
+            flex-direction: row-reverse;
+            gap: 4.188rem;
+
+            .left__content {
+                width: 50%;
+                padding-right: 16rem;
+
+                .impact__text {
+                    color: ${actionsColors.primary};
+                }
+
+                h1 {
+                    font-size: 3rem;
+                    line-height: 3.125rem;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    color: ${grayScaleColors.darkGray2};
+                }
+                .subtitle {
+                    font-size: 1rem;
+                    color: ${grayScaleColors.darkGray2};
+                    line-height: 1.75rem;
+                    letter-spacing: .75px;
+                }
+            }
+
+            .right__content {
+                width: 50%;
+                overflow: hidden;
+                height: fit-content;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    /* Circulo com gradiente */
+    .gradient__box {
+        position: absolute;
+        top: 4.5rem;
+        left: 10rem;
+        height: 30vw;
+        width: 30vw;
+        border-radius: 100%;
+        background: linear-gradient(180deg, rgba(66, 0, 255, 0.25) -40.67%, rgba(255, 255, 255, 0) 100%);
+    }
+
     @media screen and (max-width: 769px) {
         overflow: hidden;
         
-        /* Carrosel */
         .custom-carousel {
             padding: 4rem 1.25rem 2.5rem;
 
@@ -83,6 +139,58 @@ export const SectionBanner = styled(Section)`
             top: 1.25rem;
             right: -4rem;
             width: 35%;
+        }
+
+        .toggle-direction-carousel {
+            .banner__container {
+                flex-direction: column-reverse;
+                gap: 1.688rem;
+
+                .left__content {
+                    padding-right: 0;
+                    width: 100%;
+                    text-align: left;
+
+                    .impact__text {
+                        color: ${actionsColors.warning};
+                    }   
+                    h1 {
+                        font-size: 1.75rem;
+                        line-height: 2.25rem;
+                        letter-spacing: 2px;
+                    }
+                    .subtitle {
+                        font-size: .875rem;
+                        line-height: 1.375rem;
+                        letter-spacing: .25px;
+                    }
+                    .primary-button {
+                        width:12.5rem;
+                        margin-top: 1.5rem;
+                    }
+                }
+
+                .right__content {
+                    width: 80%;
+                    padding: 2rem 0 5rem;
+                    overflow: hidden;
+
+                    img {
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        .gradient__box {
+            top: 2.5rem;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%, 0);
+            width: 80vw;
+            height: 80vw;
         }
     }
 `;

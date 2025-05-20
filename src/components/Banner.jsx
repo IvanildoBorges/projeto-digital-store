@@ -105,14 +105,14 @@ const RightContent = styled.div`
     }
 `;
 
-const Banner = ({banner}) => {
+const Banner = ({banner, classe}) => {
     return (
-        <Container className="banner__container">
+        <Container className={`banner__container ${classe}`}>
             <LeftContent className="left__content">
                 <p className="impact__text">{banner.impact}</p>
                 <h1>{banner.title}</h1>
                 <p className="subtitle">{banner.subtitle}</p>
-                <ButtonCTA classe="primary-button">Ver Ofertas</ButtonCTA>
+                <ButtonCTA classe="primary-button">{banner.textBtn}</ButtonCTA>
             </LeftContent>
             <RightContent className="right__content">
                 <img src={banner.image} alt={banner.alt} />
