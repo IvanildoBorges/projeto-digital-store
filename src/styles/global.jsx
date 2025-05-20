@@ -36,6 +36,33 @@ const Global = globalStyle`
     button, input {
         border: none;
     }
+        
+    a {
+        text-decoration: none;
+        color: ${grayScaleColors.darkGray2};
+        font-size: 1.125rem;
+        transition: all .3s ease;
+
+        .icone, .icone__link {
+            transition: all .3s ease;
+        }
+    }
+
+    a:hover {
+        color: ${actionsColors.primary};
+        
+        .text__link {
+            text-decoration: underline;
+        }
+
+        .icone__link {
+            transform: translateX(.5rem);
+        }
+    }
+
+    a.active {
+        color: ${actionsColors.primary};
+    }
 
     .icone {
         path {
@@ -51,6 +78,18 @@ const Global = globalStyle`
     .icone.active {
         path {
             fill: ${actionsColors.primary};
+        }
+    }
+
+    @media screen and (max-width: 769px) {
+        a {
+            font-size: .875rem;
+        }
+
+        a:hover {
+            .icone {
+                transform: none;
+            }
         }
     }
 `;

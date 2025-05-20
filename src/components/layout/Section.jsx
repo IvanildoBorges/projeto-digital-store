@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { actionsColors, grayScaleColors } from "../../styles/colors/cores";
+import { grayScaleColors } from "../../styles/colors/cores";
 
 const Container = styled.section`
     /* Afastamento padrão das seções */
@@ -29,8 +30,9 @@ const Container = styled.section`
             }
 
             .link__section {
-                color: ${actionsColors.primary};
-                font-size: 1.125rem;
+                display: flex;
+                align-items: center;
+                gap: 0.625rem;
             }
         }
     }
@@ -45,7 +47,8 @@ const Container = styled.section`
                 }
 
                 .link__section {
-                    font-size: .0.875rem;
+                    font-weight: 500;
+                    gap: 0.5rem;
                 }
             }
         }
@@ -59,7 +62,7 @@ const Section = ({
     titleAlign = "left",
     link = {
         text: "Show More",
-        href: "#"
+        href: "/"
     },
     className, children
 }) => {
@@ -71,13 +74,10 @@ const Section = ({
                             {title}
                         </h2>
                         {activeLink 
-                            ? <a 
-                                className="link__section" 
-                                href={link.href} 
-                                referrerPolicy="no-referrer"
-                              >
-                                {link.text}
-                              </a>
+                            ? <Link className="link__section active" to={link.href} >
+                                <p className="text__link">{link.text}</p>
+                                <span className="material-symbols-outlined icone__link">arrow_right_alt</span>
+                              </Link>
                             : <></>
                         }
                     </div>)

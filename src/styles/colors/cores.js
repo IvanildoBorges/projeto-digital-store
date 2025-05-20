@@ -6,6 +6,7 @@ export const actionsColors = {
     error:        "#EE4266",
     success:      "#52CA76",
     warning:      "#F6AA1C",
+    discount:     "#E7FF86",
     bg:           "#F9F8FE"
 }
 
