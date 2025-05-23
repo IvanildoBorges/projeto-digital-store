@@ -3,10 +3,12 @@ import { actionsColors, grayScaleColors } from "./colors/cores";
 import { tipography } from "./fonts/tipografia";
 
 const Global = globalStyle`
-    * {
+    *,
+    *::before,
+    *::after {
         margin: 0;
         padding: 0;
-        border-box: box-sizing;
+        box-sizing: border-box;
         list-style: none;
     }
 

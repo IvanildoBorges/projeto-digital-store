@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import PageLayout from '../components/layout/PageLayout.jsx';
 import Home from '../pages/Home/index.jsx';
+import ProductListingPage from '../pages/ProductListing/ProductListingPage.jsx';
 
  
 export function AppRoutes() {
@@ -16,6 +17,7 @@ export function AppRoutes() {
                 <Routes>
                     <Route path="/" element={<PageLayout />}>
                         <Route path='/' element={<Home />} />
+                        <Route path='/products' element={<ProductListingPage />} />
                     </Route>
                 </Routes>
             </BrowserRouter>

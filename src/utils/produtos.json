@@ -215,7 +215,7 @@
             "image": "https://e7.pngegg.com/pngimages/786/489/png-clipart-sneakers-skate-shoe-sportswear-red-tenis-white-child.png"
         },
         {
-            "id": "1177001",
+            "id": "1173701",
             "title": "Lace Up Lightweight",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
             "brand": "Lace Up",
@@ -747,128 +747,149 @@
             "image": "https://e7.pngegg.com/pngimages/500/525/png-clipart-hoodie-t-shirt-tracksuit-bluza-t-shirt-zipper-grey.png"
         }
     ],
-    "categories": [
+    "filters": [
         {
-            "id": 1,
-            "category": "Esporte e lazer"
-        }, 
-        {
-            "id": 2,
-            "category": "Casual"
-        }, 
-        {
-            "id": 3,
-            "category": "Utilitário"
-        }, 
-        {
-            "id": 4,
-            "category": "Corrida"
-        },
-        {
-            "id": 4,
-            "category": "Vestuário"
-        }
-    ],
-    "brands": [
-        {
-            "id": "2025001",
-            "brand": "Adidas"
-        },
-        {
-            "id": "2025002",
-            "brand": "American Strong"
-        },
-        {
-            "id": "2025003",
-            "brand": "Asus"
-        },
-        {
-            "id": "2025004",
-            "brand": "Bud"
-        },
-        {
-            "id": "2025005",
-            "brand": "Chuck Taylor"
-        },
-        {
-            "id": "2025006",
-            "brand": "Clothing"
-        },
-        {
-            "id": "2025007",
-            "brand": "Con Walking"
-        },
-        {
-            "id": "2025009",
-            "brand": "Genérico"
-        },
-        {
-            "id": "2025010",
-            "brand": "Gildan"
-        },
-        {
-            "id": "2025011",
-            "brand": "Hibou"
-        },
-        {
-            "id": "2025012",
-            "brand": "HTC"
-        },
-        {
-            "id": "2025013",
-            "brand": "Ideus"
-        },
-        {
-            "id": "2025014",
-            "brand": "K-Swiss"
-        },
-        {
-            "id": "2025015",
-            "brand": "Lace Up"
-        },
-        {
-            "id": "2025016",
-            "brand": "Nike"
-        },
-        {
-            "id": "2025017",
-            "brand": "Nvizin"
-        },
-        {
-            "id": "2025018",
-            "brand": "Puma"
-        },
-        {
-            "id": "2025019",
-            "brand": "Redragon"
-        },
-        {
-            "id": "2025020",
-            "brand": "Rift"
-        },
-        {
-            "id": "2025021",
-            "brand": "Ruffle Neckline"
-        },
-        {
-            "id": "2025022",
-            "brand": "Samsung"
-        },
-        {
-            "id": "2025023",
-            "brand": "Sony"
-        },
-        {
-            "id": "2025024",
-            "brand": "Sportswear"
-        },
-        {
-            "id": "2025025",
-            "brand": "Sweat Women"
-        },
-        {
-            "id": "2025026",
-            "brand": "Tracksuit"
+            "brand": [
+                {
+                    "id": "2025001",
+                    "brand": "Adidas"
+                },
+                {
+                    "id": "2025002",
+                    "brand": "American Strong"
+                },
+                {
+                    "id": "2025003",
+                    "brand": "Asus"
+                },
+                {
+                    "id": "2025004",
+                    "brand": "Bud"
+                },
+                {
+                    "id": "2025005",
+                    "brand": "Chuck Taylor"
+                },
+                {
+                    "id": "2025006",
+                    "brand": "Clothing"
+                },
+                {
+                    "id": "2025007",
+                    "brand": "Con Walking"
+                },
+                {
+                    "id": "2025009",
+                    "brand": "Genérico"
+                },
+                {
+                    "id": "2025010",
+                    "brand": "Gildan"
+                },
+                {
+                    "id": "2025011",
+                    "brand": "Hibou"
+                },
+                {
+                    "id": "2025012",
+                    "brand": "HTC"
+                },
+                {
+                    "id": "2025013",
+                    "brand": "Ideus"
+                },
+                {
+                    "id": "2025014",
+                    "brand": "K-Swiss"
+                },
+                {
+                    "id": "2025015",
+                    "brand": "Lace Up"
+                },
+                {
+                    "id": "2025016",
+                    "brand": "Nike"
+                },
+                {
+                    "id": "2025017",
+                    "brand": "Nvizin"
+                },
+                {
+                    "id": "2025018",
+                    "brand": "Puma"
+                },
+                {
+                    "id": "2025019",
+                    "brand": "Redragon"
+                },
+                {
+                    "id": "2025020",
+                    "brand": "Rift"
+                },
+                {
+                    "id": "2025021",
+                    "brand": "Ruffle Neckline"
+                },
+                {
+                    "id": "2025022",
+                    "brand": "Samsung"
+                },
+                {
+                    "id": "2025023",
+                    "brand": "Sony"
+                },
+                {
+                    "id": "2025024",
+                    "brand": "Sportswear"
+                },
+                {
+                    "id": "2025025",
+                    "brand": "Sweat Women"
+                },
+                {
+                    "id": "2025026",
+                    "brand": "Tracksuit"
+                }
+            ],
+            "category": [
+                {
+                    "id": 1,
+                    "category": "Esporte e lazer"
+                }, 
+                {
+                    "id": 2,
+                    "category": "Casual"
+                }, 
+                {
+                    "id": 3,
+                    "category": "Utilitário"
+                }, 
+                {
+                    "id": 4,
+                    "category": "Corrida"
+                },
+                {
+                    "id": 5,
+                    "category": "Vestuário"
+                }
+            ],
+            "gender": [
+                {"id": 1, "gender": "Masculino"},
+                {"id": 2, "gender": "Feminino"},
+                {"id": 3, "gender": "Unisex"}
+            ],
+            "state": [
+                {"id": 1, "state": "new"},
+                {"id": 2, "state": "used"}
+            ],
+            "type": [
+                {"id": 1, "type": "Camiseta"},
+                {"id": 2, "type": "Headphone"},
+                {"id": 3, "type": "Headset"},
+                {"id": 4, "type": "Oculos VR"},
+                {"id": 5, "type": "Short"},
+                {"id": 6, "type": "Tênis"}
+            ]
         }
     ],
     "promotions": [

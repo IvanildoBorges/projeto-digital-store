@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { actionsColors, grayScaleColors } from "../styles/colors/cores";
+import formatarPreco from "../utils/arredondarParaCima";
 
 const Container = styled.div`
     &.card__product {
@@ -45,6 +46,7 @@ const ImageContainer = styled.div`
             letter-spacing: .75px;
             line-height: 1.375rem;
             text-transform: uppercase;
+            z-index: 1;
         }
 
         img {
@@ -139,6 +141,9 @@ const InfoContainer = styled.div`
 `;
 
 const CardProduct = ({ produto }) => {
+    const precoComDesconto = formatarPreco(produto.price * (1 - produto.discount / 100));
+    const precoOriginal = formatarPreco(produto.price, true);
+
     return (
         <Container className="card__product">
             <ImageContainer className="image__content">
@@ -156,11 +161,15 @@ const CardProduct = ({ produto }) => {
                     </p>
                 </Link>
                 <p className="product__price">
-                    {produto.discount > 0
-                        ? <>
-                            <span className="price__old">${produto.price}</span>${produto.price * (1 - produto.discount / 100)}
-                        </>
-                        : <>${produto.price}</>
+                    {produto.discount > 0 
+                        ? (
+                            <>
+                                <span className="price__old">${precoOriginal}</span>${precoComDesconto}
+                            </>
+                        ) 
+                        : (
+                            <>${precoOriginal}</>
+                        )
                     }   
                 </p>
             </InfoContainer>
