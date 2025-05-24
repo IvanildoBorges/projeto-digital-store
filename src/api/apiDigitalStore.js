@@ -24,7 +24,7 @@ const apiDigitalStore = {
             // Função para mapear id -> nome do filtro (ex: category id=1 => "Esporte e lazer")
             function getNomeFiltro(name, id) {
                 if (!filtros[name]) return null;
-                    const item = filtros[name].find(f => {
+                const item = filtros[name].find(f => {
                     // id pode ser number ou string, faça cast para garantir comparação correta
                     return String(f.id) === String(id);
                 });
@@ -84,33 +84,41 @@ const apiDigitalStore = {
                 return [];
             });
     },
-    getFiltros: async () => {
+    getFiltros: async () => {   // Retorna um array formatado contendo todos os filtros disponíveis
         try {
-            const response = await fetch(`${url}/filters`);
-            const data = await response.json();
+            const dados = await fetch(`${url}/filters`).then(resposta => resposta.json());  // Faz a requisição e já converte a resposta em JSON
 
-            // 'data' é um array com um único objeto, então usamos data[0]
-            const allFilters = data[0];
-            const filterNames = Object.keys(allFilters);
+            const filtros = dados[0];   // A API retorna um array com um único objeto de filtros
 
-            const result = [];
+            if (!filtros) return [];    // Se não houver dados, retorna um array vazio
 
-            for (const key of filterNames) {
-                const currentArray = allFilters[key];
+            /* Object.entries() - converte objeto em array de pares [[chave, valor]]. Ex: 
+                { 
+                    id: 2, 
+                    brand: [{id: 1, "brand": "text1"}, {id: 2, "brand": "text2"}], 
+                    type: [{id: 1, "type": "text1"}, {id: 2, "type": "text2"}]
+                } 
+                vira 
+                [
+                    ["id", 2], 
+                    ["brand", [{id: 1, "brand": "text1"}, {id: 2, "brand": "text2"}]], 
+                    ["type", [{id: 1, "type": "text1"}, {id: 2, "type": "text2"}]]
+                ] 
+            */
+            return Object.entries(filtros)
+                .filter(([chave]) => chave !== 'id')    // Remove array par com chave id. Ex: ["id", 2]
+                // flatMap - itera em cada array par. 
+                // Ex: ["brand", [{...}, {...}]] onde chave="brand" e itens=[{...}, {...}]
+                .flatMap(([chave, itens]) =>            
+                    itens.map(item => ({                // Itera cada item do array de objetos. Ex: item = {...}
+                        text: item[chave],              // - valor do objeto na chave. Ex: item["brand"]="text1"
+                        value: item.id,                 // - valor do input. Ex: item.id=1
+                        name: chave                     // - nome do input. Ex: 'brand'
+                    }))
+                );
 
-                for (const item of currentArray) {
-                    const text = item[key.slice(0, -1)] || item[key]; // tira o "s" do final de cada chave. Ex: brands -> brand , categorys -> category, etc
-                    result.push({
-                        text,
-                        value: item.id || text,
-                        name: `filter.${key}` // exemplo: filter.brand, filter.category
-                    });
-                }
-            }
-
-            return result;
-        } catch (error) {
-            console.error("Erro ao buscar filtros:", error);
+        } catch (erro) {
+            console.error("Erro ao buscar filtros:", erro);
             return [];
         }
     }

@@ -116,7 +116,7 @@ const ProductListingPage = ({ search = "" }) => {
     const listagemDeFiltros = () => {
         // Agrupa os filtros por nome da chave (ex: brand, categories, etc.)
         const filtrosAgrupadosPorTipo = filtros.reduce((filtrosAgrupados, filtroAtual) => {
-            const nomeDoTipoDeFiltro = filtroAtual.name.replace("filter.", ""); // ex: "brand"
+            const nomeDoTipoDeFiltro = filtroAtual.name; // ex: "brand"
 
             if (!filtrosAgrupados[nomeDoTipoDeFiltro]) {
                 filtrosAgrupados[nomeDoTipoDeFiltro] = [];
