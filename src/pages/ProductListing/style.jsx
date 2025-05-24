@@ -57,7 +57,6 @@ export const SectionResults = styled(Section)`
 
 export const SectionProducts = styled(Section)`
     padding-top: 0;
-    min-height: 50vh;
     gap: 6rem;
 
     .content-box {
@@ -133,7 +132,6 @@ export const SectionProducts = styled(Section)`
             height: 100vh;
             background-color: #1f1f1f40;
             cursor: pointer;
-;
             z-index: 1000; /* abaixo do painel */
             transition: opacity 0.3s ease-in-out;
         }
@@ -148,6 +146,7 @@ export const SectionProducts = styled(Section)`
             grid-template-columns: 1fr 1fr 1fr;
             column-gap: .875rem;
             row-gap: 2.5rem;
+            height: fit-content;
         }
     }
 
