@@ -121,6 +121,21 @@ const apiDigitalStore = {
             console.error("Erro ao buscar filtros:", erro);
             return [];
         }
+    },
+    getProdutoById: async (id) => {
+        try {
+            const resposta = await fetch(`${url}/products/${id}`);
+            
+            if (!resposta.ok) {
+                throw new Error(`Produto com ID ${id} não encontrado`);
+            }
+
+            const produtoJSON = await resposta.json();
+            return new ProductModel(produtoJSON);
+        } catch (erro) {
+            console.error(`Erro ao buscar produto com ID ${id}:`, erro);
+            return null;
+        }
     }
 }
 

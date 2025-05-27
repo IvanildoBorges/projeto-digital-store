@@ -151,7 +151,9 @@ const CardProduct = ({ produto }) => {
                     ? <span className="produto__discount">{produto.discount}% off</span> 
                     : null
                 }
-                <img src={produto.image} alt={`${produto.type} ${produto.brand}`} />
+                <Link to={`/product/${produto.id}`}>
+                    <img src={produto.image} alt={`${produto.type} ${produto.brand}`} />
+                </Link>
             </ImageContainer>
             <InfoContainer className="info__content">
                 <p className="product__type">{produto.type}</p>
