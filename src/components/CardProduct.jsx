@@ -151,13 +151,13 @@ const CardProduct = ({ produto }) => {
                     ? <span className="produto__discount">{produto.discount}% off</span> 
                     : null
                 }
-                <Link to={`/product/${produto.id}`}>
+                <Link to={`/products/product/${produto.id}`}>
                     <img src={produto.image} alt={`${produto.type} ${produto.brand}`} />
                 </Link>
             </ImageContainer>
             <InfoContainer className="info__content">
                 <p className="product__type">{produto.type}</p>
-                <Link className="product__name-gender" to={`/product/${produto.id}`}>
+                <Link className="product__name-gender" to={`/products/product/${produto.id}`}>
                     <p className="text__link">
                         {produto.title} - <span className="product__gender">{produto.gender}</span>
                     </p>
