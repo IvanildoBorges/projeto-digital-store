@@ -19,7 +19,7 @@ export function AppRoutes() {
                     <Route path="/" element={<PageLayout />}>
                         <Route path='/' element={<Home />} />
                         <Route path='/products' element={<ProductListingPage />} />
-                        <Route path='/product/:id' element={<ProductViewPage />} />
+                        <Route path='/products/product/:id' element={<ProductViewPage />} />
                     </Route>
                 </Routes>
             </BrowserRouter>

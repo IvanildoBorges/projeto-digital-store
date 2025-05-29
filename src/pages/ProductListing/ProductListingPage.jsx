@@ -24,6 +24,7 @@ const ProductListingPage = ({ search = "" }) => {
     const [isFilterOpen, setIsFilterOpen] = useState(false);
 
     useEffect(() => {
+        window.scrollTo(0, 0); // sobe para o topo
         carregaListaDeFiltros();
     }, []);
 
