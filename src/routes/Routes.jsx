@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import PageLayout from '../components/layout/PageLayout.jsx';
 import Home from '../pages/Home/index.jsx';
+import NotFound from '../pages/NotFound/index.jsx';
 import ProductViewPage from '../pages/Product/ProductViewPage.jsx';
 import ProductListingPage from '../pages/ProductListing/ProductListingPage.jsx';
 
@@ -20,6 +21,9 @@ export function AppRoutes() {
                         <Route path='/' element={<Home />} />
                         <Route path='/products' element={<ProductListingPage />} />
                         <Route path='/products/product/:id' element={<ProductViewPage />} />
+                    </Route>
+                    <Route path="*" element={<PageLayout />}>
+                        <Route path="*" element={<NotFound />} />
                     </Route>
                 </Routes>
             </BrowserRouter>
