@@ -34,8 +34,8 @@ Siga os passos abaixo para rodar o projeto localmente:
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/digital-store.git
-cd digital-store
+git clone https://github.com/IvanildoBorges/projeto-digital-store.git
+cd projeto-digital-store
 ```
 
 ### 2. Instale as dependências
