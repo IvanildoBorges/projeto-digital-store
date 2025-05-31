@@ -1,6 +1,7 @@
 import 'primeicons/primeicons.css';
 import { Paginator } from "primereact/paginator";
 import { useEffect, useState } from "react";
+import { useSearchParams } from 'react-router-dom';
 import apiDigitalStore from "../../api/apiDigitalStore";
 import CardProduct from "../../components/CardProduct";
 import FilterGroup from '../../components/FilterGroup';
@@ -8,7 +9,9 @@ import Select from "../../components/Select";
 import formatarTitulo from '../../utils/formatarTitulo';
 import { SectionProducts, SectionResults } from "./style";
 
-const ProductListingPage = ({ search = "" }) => {
+const ProductListingPage = () => {
+    const [searchParams] = useSearchParams();
+    const search = searchParams.get('search') || "";
     const [filtros, setFiltros] = useState([]); // lista completa vinda da API (opções)
     const [filtrosSelecionados, setFiltrosSelecionados] = useState([]); // filtro ativo
     const [orderBy, setOrderBy] = useState("mais-relevante");
@@ -239,8 +242,11 @@ const ProductListingPage = ({ search = "" }) => {
                         const perPage = e.rows;
 
                         // Busca novos dados da API com base na página e quantidade de itens
-                        const data = await apiDigitalStore.getProdutosFiltros(filtros, page, perPage);
-                        setPagination(data);
+                        setPagination(prev => ({
+                            ...prev,
+                            paginaAtual: page,
+                            porPagina: perPage
+                        }));
                     }} 
 
                     // Layout simples com botões de navegação e indicador de página atual
