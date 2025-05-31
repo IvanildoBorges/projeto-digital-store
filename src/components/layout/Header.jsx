@@ -108,6 +108,7 @@ const Header = () => {
     useEffect(() => {
         const timeout = setTimeout(buscarProdutos, 300); // debounce
         return () => clearTimeout(timeout);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [termoBusca]);
 
     // Fecha o modal ao clicar fora do campo de entrada e do modal
