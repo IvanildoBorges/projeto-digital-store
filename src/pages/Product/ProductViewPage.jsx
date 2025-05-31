@@ -122,6 +122,7 @@ const ProductViewPage = () => {
                 </div>
                 <div className="right__content">
                     <BuyBox
+                        key={produto.id} // <-- força reinicialização quando o ID muda
                         name={produto.title}
                         categorie={produto.category}
                         brand={produto.brand}
