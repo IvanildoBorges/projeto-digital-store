@@ -12,14 +12,17 @@ const CampoDeEntrada = styled.input`
     }
 `;
 
-const Input = ({ tipo = "text", apelido, classe, icone, funcao }) => {
+const Input = ({ tipo = "text", apelido, classe, icone, valor, funcao, referencia, foco }) => {
     return (
         <ContainerInput className="input-component">
             <CampoDeEntrada 
                 type={tipo}
                 className={`input ${classe}`} 
                 onChange={funcao} 
+                onFocus={foco}
                 placeholder={apelido}
+                value={valor}
+                ref={referencia}
             />
             {icone}
         </ContainerInput>

@@ -136,6 +136,18 @@ const apiDigitalStore = {
             console.error(`Erro ao buscar produto com ID ${id}:`, erro);
             return null;
         }
+    },
+    getProdutosPorTitulo: async (texto) => {
+        try {
+            const resposta = await fetch(`${url}/products?title_like=${texto}`);
+            const produtos = await resposta.json();
+            // console.log(texto, produtos);
+            
+            return produtos.map(p => new ProductModel(p));
+        } catch (error) {
+            console.error("Erro ao buscar por título: ", error);
+            return [];
+        }
     }
 }
 
