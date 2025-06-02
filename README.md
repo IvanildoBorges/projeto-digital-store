@@ -116,6 +116,10 @@ src/
 │   ├── Select.jsx
 │   └── TitleSection.jsx
 ├── models/
+├── context/
+│   ├── auth/
+│   │   ├── AuthContext.js
+│   └── └── AuthProvider.jsx
 ├── pages/
 │   ├── Home/
 │   │   ├── index.jsx
@@ -227,6 +231,18 @@ Rodapé com `<hr />` e:
 
 ---
 
+
+## 🔐 Login
+
+Apresenta:
+
+- Formulário com campos de entrada
+- Metodos alternativos para login
+- Link para cadastro de conta
+- Imagem de fundo
+
+---
+
 ## 🏠 Página Inicial
 
 A Home apresenta:
@@ -252,6 +268,15 @@ Exibe:
 - Galeria de imagens
 - **Buy Box** (Nome, descrição, ProductOptions, preço, avaliações, botão de compra)
 - Seção de **Produtos recomendados**
+
+---
+
+## 🔍 Página de Erro Not Found
+
+Exibe:
+
+- Animação 404
+- **Botão** para voltar ao inicio
 
 ---
 
