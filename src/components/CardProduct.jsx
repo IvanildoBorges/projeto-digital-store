@@ -49,16 +49,20 @@ const ImageContainer = styled.div`
             z-index: 1;
         }
 
-        img {
-            display: block;
-            width: 85%;
-            height: 85%;
-            object-fit: contain;
-            transition: transform 0.3s ease;
-        }
+        a {
+            display: flex;
+            justify-content: center;
+            img {
+                display: block;
+                width: 85%;
+                height: 85%;
+                object-fit: contain;
+                transition: transform 0.3s ease;
+            }
 
-        img:hover {
-            transform: scale(1.1); /* zoom interno */
+            img:hover {
+                transform: scale(1.1); /* zoom interno */
+            }
         }
     }
 
@@ -78,9 +82,11 @@ const ImageContainer = styled.div`
                 line-height: 1.5rem;
             }
 
-            img {
-                width: 100%;
-                height: 100%;
+            a {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
     }
