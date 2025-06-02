@@ -97,10 +97,12 @@ src/
 ├── components/
 │   ├── layout/
 │   │   ├── Header.jsx
+│   │   ├── HeaderUnAuthorized.jsx
 │   │   ├── Footer.jsx
 │   │   ├── Main.jsx
 │   │   ├── Nav.jsx
 │   │   ├── PageLayout.jsx
+│   │   ├── PageLayoutUnAuthorized.jsx
 │   │   └── Section.jsx
 │   ├── Logo.jsx
 │   ├── Banner.jsx
@@ -124,6 +126,9 @@ src/
 │   ├── ProductListing/
 │   │   ├── ProductListingPage.jsx
 │   │   └── style.jsx
+│   ├── Login/
+│   │   ├── index.jsx
+│   │   └── style.jsx
 │   └── NotFound/
 │       ├── index.jsx
 │       └── style.jsx
@@ -137,6 +142,8 @@ src/
 ---
 
 ## 🎨 Paleta de Cores
+
+As cores usadas foram criadas no arquivo `cores.js` na pasta style, e categorizadas em dois tipos: `ActionColores` e `GreyScaleColors`
 
 | Tipo       | Cor       |
 |------------|-----------|
