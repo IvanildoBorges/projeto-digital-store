@@ -4,6 +4,10 @@
 
 🔗 **Veja o projeto online**: [projeto-digital-store-8dg6.onrender.com](https://projeto-digital-store-8dg6.onrender.com/)
 
+<p align="center">
+  <img src="/cover.png" alt="Capa do Projeto" width="100%" />
+</p>
+
 ---
 
 ## 🧑‍💻 Autores
