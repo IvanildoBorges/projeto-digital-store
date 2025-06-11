@@ -1,57 +1,236 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
+import face from "../../assets/facebook.svg";
+import insta from "../../assets/instagram.svg";
+import logo from "../../assets/logo-footer.svg";
+import twitter from "../../assets/twitter.svg";
+import { actionsColors, grayScaleColors } from "../../styles/colors/cores";
 
 const FooterComponent = styled.footer`
     &.footer-component {
-        background-color: chartreuse;
-        
+        padding: 4.5rem 6.25rem 1.375rem;
+        background-color: ${grayScaleColors.darkGray};
+        color: ${grayScaleColors.white};
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
-        p {
-            /* ADICIONAR ESTILOS AQUI*/
+        .content-top {
+            display: flex;
+            justify-content: space-between;
+
+            .info-company {
+                display: block;
+                width: 19.188rem;
+
+                    img {
+                        width: 15.813rem;
+                        margin-bottom: 2.188rem;
+                    }
+
+                    .description-company {
+                        line-height: 1.625rem;
+                        margin-bottom: 2.5rem;
+                    }
+
+                    .box-social {
+                        display: flex;
+                        gap: 2.188rem;
+
+                        img {
+                            height: 1.25rem;
+                            width: 1.25rem;
+                            margin: 0;
+                        }
+                    }
+            }
+
+            .items-company {
+                display: flex;
+                flex-direction: column;
+                gap: 1.75rem;
+
+                .title-list {
+                    font-size: 1.125rem;
+                    font-weight: 600;
+                }
+
+                .list-items {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .25rem;
+
+                    li {
+                        a {
+                            font-size: 1rem;
+                            line-height: 2.375rem;
+                            color: ${grayScaleColors.white};
+                        }
+                        
+                        a:hover {
+                            color: ${actionsColors.primary};
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .item-span {
+                        line-height: 1.625rem;
+                        width: 14.438rem;
+                    }
+
+                    .item-span:not(:last-child) {
+                        margin-bottom: 0.625rem;
+                    }
+                }
+            }
+        }
+
+        .divisor {
+            border: 1px solid ${grayScaleColors.white};
+            opacity: .3;
+            margin: 2.125rem 0 1.438rem;
+        }
+
+        .content-bottom {
+            font-size: .813rem;
+            line-height: 1.5rem;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 769px) {
+        &.footer-component {
+            padding: 3.125rem 1.25rem 2.875rem;
+            justify-content: flex-start;
+
+            .content-top {
+                flex-wrap: wrap;
+                justify-content: flex-start;
+
+                .info-company {
+                    margin-bottom: 2.5rem;
+
+                    img {
+                        width: 10.625rem;
+                        margin-bottom: 1.25rem;
+                    }
+
+                    .description-company {
+                        line-height: 1.375rem;
+                        margin-bottom: 1.875rem;
+                    }
+                }
+
+                .items-company {
+                    gap: 0.625rem;
+                    width: fit-content;
+                    margin-right: 2rem;
+                    margin-bottom: 2.5rem;
+
+                    .list-items {
+                        gap: 0;
+
+                        li {
+                            a {
+                                line-height: 1.938rem;
+                            }
+                        }
+
+                        .item-span {
+                            line-height: 1.938rem;
+                            width: 17.563rem;
+                        }
+
+                        .item-span:not(:last-child) {
+                            margin-bottom: 1.5rem;
+                        }
+                    }
+                }
+            }
+
+            .divisor {
+                margin: 0 0 1.438rem;
+            }
         }
     }
 `;
 
 const Footer = () => {
+    const ano = new Date().getFullYear();
+
     return (
         <FooterComponent className="footer-component">
-            <div class="footer-container">
-            <div class="footer - section">
-                <h3>Digital Store</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tempore tenetur ipsa odit molestias, deserunt sunt a dicta aperiam repellat accusamus nam consequuntur omnis, inventore, nihil autem nostrum dolorem quo.</p>
-                <div class="Social-icons">
-                <a href="#"><img src="facebook-icon.png" alt="Facebook"/></a>
-                <a href="#"><img src="intagran-icon.png" alt="Intagran"/></a>
-                <a href="#"><img src="twitter-icon.png" alt="Twitter"/></a>
+            <div className="content-top">
+                <div className="info-company">
+                    <img src={logo} alt="logo da empresa" />
+                    <p className="description-company">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <div className="box-social">
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <img src={face} alt="Facebook icone" />
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <img src={insta} alt="Instagram icone" />
+                        </a>
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <img src={twitter} alt="Twitter icone" />
+                        </a>
+                    </div>
                 </div>
-                <div class="footer-section">
-                <h3>Informação</h3>
-                <ul>
-                    <li><a href="#">Sobre Drip Store</a></li>
-                    <li><a href="#">Segurança</a></li>
-                    <li><a href="#">Wishlist</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Trabalhe Conosco</a></li>
-                    <li><a href="#">Meus Pedidos</a></li>
-                </ul>
+                <div className="items-company">
+                    <h4 className="title-list">Informação</h4>
+                    <ul className="list-items">
+                        <li>
+                            <Link>Sobre Drip Store</Link>
+                        </li>
+                        <li>
+                            <Link>Segurança</Link>
+                        </li>
+                        <li>
+                            <Link>Wishlist</Link>
+                        </li>
+                        <li>
+                            <Link>Blog</Link>
+                        </li>
+                        <li>
+                            <Link>Trabalhe conosco</Link>
+                        </li>
+                        <li>
+                            <Link>Meus Pedidos</Link>
+                        </li>
+                    </ul>
                 </div>
-                <div class="footer-section">
-                <h3>Categorias</h3>
-                <ul>
-                    <li><a href="#"></a>Camisetas</li>
-                    <li><a href="#"></a>Calças</li>
-                    <li><a href="#"></a>Bonés</li>
-                    <li><a href="#"></a>Headphones</li>
-                    <li><a href="#"></a>Tênis</li>
-                <div class="footer-section"></div>
-                <h3>Contatos</h3>
-                </ul>
-                <p>Av. Santos Dumont, 1510 1º andar - Aldeota, Fortaleza - CE, 60150-161</p>
-                <p>Telefone: (85)3051-3411</p>
+                <div className="items-company">
+                    <h4 className="title-list">Categorias</h4>
+                    <ul className="list-items">
+                        <li>
+                            <Link to="/products">Camisetas</Link>
+                        </li>
+                        <li>
+                            <Link to="/products">Calças</Link>
+                        </li>
+                        <li>
+                            <Link to="/products">Bonés</Link>
+                        </li>
+                        <li>
+                            <Link to="/products">Headphones</Link>
+                        </li>
+                        <li>
+                            <Link to="/products">Tênis</Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="items-company">
+                    <h4 className="title-list">Contato</h4>
+                    <div className="list-items">
+                        <span className="item-span">Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</span>
+                        <span className="item-span">(85) 3051-3411</span>
+                    </div>
                 </div>
             </div>
+            <div className="divisor"></div>
+            <div className="content-bottom">
+                <p>@ {ano} Digital College</p>
             </div>
-            <div class="footer - section"></div>
-            <p class="copyright">@ 2022 Digital College</p>
         </FooterComponent>
     );
 }
